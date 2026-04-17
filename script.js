@@ -43,12 +43,12 @@
   var rotatingEl = document.getElementById('rotatingText');
   if (rotatingEl) {
     var phrases = [
-      'an AI Research Engineer.',
-      'a multi-agent systems builder.',
-      'an agent runtime architect.',
-      'an applied AI researcher.',
-      'an eval systems designer.',
-      'a writer.'
+      'a Product Manager.',
+      'a community builder.',
+      'a growth optimizer.',
+      'a strategist.',
+      'an EdTech enthusiast.',
+      'a data-driven leader.'
     ];
     var idx = 0;
 
