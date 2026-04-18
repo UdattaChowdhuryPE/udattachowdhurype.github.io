@@ -47,7 +47,7 @@
       'a community builder.',
       'a growth optimizer.',
       'a strategist.',
-      'an EdTech enthusiast.',
+      'a consumer tech enthusiast.',
       'a data-driven leader.'
     ];
     var idx = 0;

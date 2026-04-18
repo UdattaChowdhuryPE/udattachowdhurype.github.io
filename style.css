@@ -320,11 +320,11 @@ strong { font-weight: 600; color: var(--text); }
 
 .section-label {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.72rem;
-  font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--text-muted);
+  letter-spacing: 0.12em;
+  color: var(--text);
   margin-bottom: 1.25rem;
 }
 
