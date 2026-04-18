@@ -599,7 +599,7 @@ strong { font-weight: 600; color: var(--text); }
 .side-project:last-child { border-bottom: none; }
 
 .side-project h3 {
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   font-weight: 600;
   color: var(--text);
   margin-bottom: 0.25rem;
@@ -616,9 +616,9 @@ strong { font-weight: 600; color: var(--text); }
 .side-project h3 a:hover { text-decoration-color: var(--accent); }
 
 .side-project p {
-  font-size: 0.88rem;
-  color: var(--text-muted);
-  line-height: 1.55;
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
 }
 
 /* — PAPERS PAGE — */
