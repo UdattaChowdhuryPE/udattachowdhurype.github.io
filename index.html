@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,18 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://UdattaChowdhuryPE.github.io">
   <script>
-    (function(){var t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.setAttribute('data-theme','dark')})();
+    (function () { var t = localStorage.getItem('theme'); if (t === 'dark' || (!t && matchMedia('(prefers-color-scheme:dark)').matches)) document.documentElement.setAttribute('data-theme', 'dark') })();
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
 </head>
+
 <body>
 
   <nav class="nav" id="nav">
@@ -35,8 +40,22 @@
         </div>
         <span class="nav-divider"></span>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
         </button>
       </div>
     </div>
@@ -46,12 +65,13 @@
     <div class="container">
 
       <!-- Hero with rotating text -->
-      <section class="hero">
+      <section class="hero section visible">
         <h1 class="hero-title">
-          Hi, I'm Udatta,<br>
+          Hi, I'm <span class="hero-name-gradient">Udatta Chowdhury</span>,<br>
           <span class="rotating-text" id="rotatingText">a Product Manager.</span>
         </h1>
-        <p class="hero-intro">I build data-driven products, foster user communities, and lead cross-functional teams to deliver impactful experiences. Currently at <strong>Habuild</strong>.</p>
+        <p class="hero-intro">I build data-driven products, foster user communities, and lead cross-functional teams to
+          deliver impactful experiences. Currently at <strong>Habuild</strong>.</p>
         <div class="hero-actions">
           <a href="mailto:udattachowdhury2000@gmail.com" class="btn-primary">Get in touch →</a>
           <a href="resume.pdf" target="_blank" class="btn-outline">Resume ↗</a>
@@ -62,9 +82,17 @@
       <section class="section" id="about">
         <h2 class="section-label">About</h2>
         <div class="section-body">
-          <p>I'm a Product Manager at <strong>Habuild</strong>, where I work in the Founder’s Office shaping India's First Habit Building Program for Yoga. I build internal tools, optimize operations, and run products that improve community member retention and operational efficiency.</p>
-          <p>Before Habuild, I was at <strong>GenWise</strong> managing product features like Saathi and Astro from the ground up, scaling the user base to 100k+ and leveraging AI to drive revenue and user engagement. I also led digital marketing and product-led growth initiatives.</p>
-          <p>I have experience optimizing B2B tools at <strong>Sprinto</strong> and launching end-to-end customer journeys at <strong>ChefKart</strong>. I studied Electronics and Communications Engineering at <strong>Bennett University</strong>, but my passion lies in solving user problems, mapping out product roadmaps, and making data-driven decisions that impact the bottom line.</p>
+          <p>I'm a Product Manager at <strong>Habuild</strong>, where I work in the Founder’s Office shaping India's
+            First Habit Building Program for Yoga. I build internal tools, optimize operations, and run products that
+            improve community member retention and operational efficiency.</p>
+          <p>Before Habuild, I was at <strong>GenWise</strong> managing product features like Saathi and Astro from the
+            ground up, scaling the user base to 100k+ and leveraging AI to drive revenue and user engagement. I also led
+            digital marketing and product-led growth initiatives.</p>
+          <p>I have experience optimizing B2B tools at <strong>Sprinto</strong> and launching end-to-end customer
+            journeys at <strong>ChefKart</strong>. I studied Electronics and Communications Engineering at
+            <strong>Bennett University</strong>, but my passion lies in solving user problems, mapping out product
+            roadmaps, and making data-driven decisions that impact the bottom line.
+          </p>
         </div>
       </section>
 
@@ -72,7 +100,8 @@
       <section class="section" id="current">
         <h2 class="section-label">Currently Working On</h2>
         <div class="section-body">
-          <p>Scaling operational workflows and optimizing community member engagement at <strong>Habuild</strong>. Recently built an internal WA community member count tracker that reduced human effort by 85%.</p>
+          <p>Scaling operational workflows and optimizing community member engagement at <strong>Habuild</strong>.
+            Recently built an internal WA community member count tracker that reduced human effort by 85%.</p>
         </div>
         <div class="tags">
           <span class="tag">Community Building</span>
@@ -91,21 +120,24 @@
               <h3>Community Operations Systems</h3>
               <span class="highlight-meta">Habuild · 2025</span>
             </div>
-            <p>Built WA community member count tools & operational SOPs, reducing manual attendance effort by 90% and operational incidents by 50%.</p>
+            <p>Built WA community member count tools & operational SOPs, reducing manual attendance effort by 90% and
+              operational incidents by 50%.</p>
           </a>
           <a href="work.html#genwise" class="highlight-row">
             <div class="highlight-top">
               <h3>Saathi & Astro</h3>
               <span class="highlight-meta">GenWise · 2023-2025</span>
             </div>
-            <p>Product owner for key features generating INR 10+ Mn revenue. Leveraged AI to analyze 750+ daily calls for customer profiling.</p>
+            <p>Product owner for key features generating INR 10+ Mn revenue. Leveraged AI to analyze 750+ daily calls
+              for customer profiling.</p>
           </a>
           <a href="work.html#sprinto" class="highlight-row">
             <div class="highlight-top">
               <h3>Secure Auditor Dashboard</h3>
               <span class="highlight-meta">Sprinto · 2023</span>
             </div>
-            <p>Designed RBAC for auditors and launched a "Getting Started" feature, reducing client training expense & time by 60%.</p>
+            <p>Designed RBAC for auditors and launched a "Getting Started" feature, reducing client training expense &
+              time by 60%.</p>
           </a>
         </div>
         <a href="work.html" class="link-arrow" style="margin-top: 1.25rem;">View timeline →</a>
@@ -117,17 +149,20 @@
         <div>
           <a href="products.html#genwise" class="paper-row">
             <span class="paper-year">2023</span>
-            <span class="paper-name">GenWise Platform: Scaled user base to 100k+ and optimized call conversion by 39%</span>
+            <span class="paper-name">GenWise Platform: Scaled user base to 100k+ and optimized call conversion by
+              39%</span>
             <span class="paper-arrow">Details →</span>
           </a>
           <a href="products.html#chefkart" class="paper-row">
             <span class="paper-year">2022</span>
-            <span class="paper-name">ChefKart StarChef: Launched end-to-end customer journey & revamped Trial Attendance</span>
+            <span class="paper-name">ChefKart StarChef: Launched end-to-end customer journey & revamped Trial
+              Attendance</span>
             <span class="paper-arrow">Details →</span>
           </a>
           <a href="products.html#symbl" class="paper-row">
             <span class="paper-year">2022</span>
-            <span class="paper-name">Symbl AI: Async API Logs & Web SDK development for conversational intelligence</span>
+            <span class="paper-name">Symbl AI: Async API Logs & Web SDK development for conversational
+              intelligence</span>
             <span class="paper-arrow">Details →</span>
           </a>
         </div>
@@ -137,11 +172,20 @@
       <!-- Contact -->
       <section class="section" id="contact">
         <h2 class="section-label">Contact</h2>
-        <p class="contact-text">Interested in building great products, optimizing workflows, or discussing user psychology? Let's connect.</p>
+        <p class="contact-text">Interested in building great products, optimizing workflows, or discussing user
+          psychology? Let's connect.</p>
         <a href="mailto:udattachowdhury2000@gmail.com" class="btn-primary">Get in touch →</a>
         <div class="contact-social">
-          <a href="https://www.linkedin.com/in/udattachowdhury/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-          <a href="https://x.com/cy_udatta" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="https://www.linkedin.com/in/udattachowdhury/" target="_blank" rel="noopener"
+            aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg></a>
+          <a href="https://x.com/cy_udatta" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg width="18"
+              height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg></a>
         </div>
       </section>
 
@@ -152,13 +196,27 @@
     <div class="container footer-inner">
       <span class="footer-left">© 2026 Udatta Chowdhury</span>
       <div class="footer-icons">
-        <a href="mailto:udattachowdhury2000@gmail.com" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
-        <a href="https://www.linkedin.com/in/udattachowdhury/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-        <a href="https://x.com/cy_udatta" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        <a href="mailto:udattachowdhury2000@gmail.com" aria-label="Email"><svg width="16" height="16"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+          </svg></a>
+        <a href="https://www.linkedin.com/in/udattachowdhury/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg
+            width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg></a>
+        <a href="https://x.com/cy_udatta" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg width="16"
+            height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </svg></a>
       </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>

@@ -39,6 +39,71 @@
     });
   }
 
+  // ---- Scroll-triggered animations ----
+  var observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, observerOptions);
+
+  var staggerObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        var siblings = entry.target.parentElement.querySelectorAll(
+          '.highlight-row, .paper-row, .exp, .paper-full, .side-project, .timeline-item'
+        );
+        var idx = Array.prototype.indexOf.call(siblings, entry.target);
+        entry.target.style.transitionDelay = (idx * 80) + 'ms';
+        entry.target.classList.add('visible');
+        staggerObserver.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.section, .page-header').forEach(function (el) {
+    observer.observe(el);
+  });
+
+  document.querySelectorAll('.highlight-row, .paper-row, .exp, .paper-full, .side-project, .timeline-item').forEach(function (el) {
+    staggerObserver.observe(el);
+  });
+
+  // ---- Timeline draw-itself line ----
+  var timelineContainer = document.querySelector('.timeline-container');
+  var timelineTrack = document.querySelector('.timeline-track');
+  if (timelineContainer && timelineTrack) {
+    var maxTrackHeight = 0;
+
+    function computeMaxTrackHeight() {
+      var dots = timelineContainer.querySelectorAll('.timeline-dot');
+      var lastDot = dots[dots.length - 1];
+      if (!lastDot) return;
+      var lastItem = lastDot.parentElement;
+      var lastDotCenter = lastItem.offsetTop + lastDot.offsetTop + lastDot.offsetHeight / 2;
+      maxTrackHeight = lastDotCenter - timelineTrack.offsetTop;
+    }
+
+    function updateTimelineTrack() {
+      var rect = timelineContainer.getBoundingClientRect();
+      var totalHeight = timelineContainer.offsetHeight;
+      var scrolled = -rect.top + window.innerHeight * 0.7;
+      var progress = Math.min(Math.max(scrolled / totalHeight, 0), 1);
+      timelineTrack.style.height = Math.min(progress * totalHeight, maxTrackHeight) + 'px';
+    }
+
+    computeMaxTrackHeight();
+    window.addEventListener('scroll', updateTimelineTrack, { passive: true });
+    window.addEventListener('resize', function () { computeMaxTrackHeight(); updateTimelineTrack(); }, { passive: true });
+    updateTimelineTrack();
+  }
+
   // ---- Rotating Hero Text ----
   var rotatingEl = document.getElementById('rotatingText');
   if (rotatingEl) {
